@@ -4,22 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bani Aggarwal Portfolio</title>
+    <style>
+        *{
+            background-color: rgb(231, 221, 208);
+        }
+        h1{
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 800;
+        }
+        .nav_panel ul{
+            list-style: none;
+            display: flex;
+            padding:0;
+            margin: 0 auto;
+            gap: 25px;
+            justify-content: center;
+            font-size: large;
+            text-align: center;
+            width: 50%;
+            height: 40px;
+            border: 2px solid rgb(231, 221, 208);
+            box-sizing: border-box;
+            border-radius: 20px;
+            align-items: center;
+            background-color: rgb(207, 187, 163);
+        }
+        .nav_panel li{
+            border: 2px solid rgb(207, 187, 163);
+            box-sizing: border-box;
+            border-radius: 20px;
+            background-color: rgb(207, 181,163);
+        }
+        ul li a{
+            display:block;
+            color: rgb(111, 89, 62);
+            background-color: rgb(207, 181,163);
+            text-decoration: none;
+        }
+        ul li a:hover{
+            background-color: rgb(207, 181,163);
+            color: white;
+            border-color: rgb(187, 115, 27)
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1> BANI AGGARWAL</h1>
-        <nav>
-            <a href="#Summary">Summary</a>
-            <br>
-            <a href="#Education">Education</a>
-            <br>
-            <a href="#Skills">Skills</a>
-            <br>
-            <a href="#Projects">Projects</a>
-            <br>
-            <a href="#Achievements and Certifications">Achievements and Certifications</a>
-            <br>
-            <a href="#Contact Me">Contact Me</a>
+        <nav class="nav_panel">
+            <ul>
+            <li><a href="#Summary">Summary</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Achievements and Certifications">Achievements and Certifications</a></li>
+            <li><a href="#Contact Me">Contact Me</a></li>
+            </ul>
         </nav>
     </header>
     <main>
