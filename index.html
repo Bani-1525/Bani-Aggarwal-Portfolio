@@ -5,54 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bani Aggarwal Portfolio</title>
     <style>
+        @media screen and (max-width: 455px){
+            div ul{
+                flex-wrap: wrap;
+                gap: 8px;
+                padding: 8px;
+            }
+            div ul li a{
+                font-size: 6px;
+                padding: 4px 6px;
+                display: inline-block;
+                text-align: center;
+            }
+        }
         *{
-            background-color: rgb(231, 221, 208);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(243,230,213);
+            font-family: Arial, Helvetica, sans-serif;
         }
         h1{
+            padding: 25px;
             text-align: center;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-weight: 800;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
         }
-        .nav_panel ul{
+        div ul{
             list-style: none;
-            display: flex;
-            padding:0;
-            margin: 0 auto;
-            gap: 25px;
-            justify-content: center;
-            font-size: large;
-            text-align: center;
-            width: 50%;
-            height: 40px;
-            border: 2px solid rgb(231, 221, 208);
-            box-sizing: border-box;
-            border-radius: 20px;
+            display:flex;
+            justify-content: space-around;
             align-items: center;
-            background-color: rgb(207, 187, 163);
+            flex-wrap: nowrap;
+            gap: 25px;
+            border: 5px solid rgb(131, 104, 72);
+            border-radius: 25px;
+            width: fit-content;
+            height:5vh;
+            margin:0 auto;
+            padding: 15px;
+            background-color: rgb(131, 104, 72);
         }
-        .nav_panel li{
-            border: 2px solid rgb(207, 187, 163);
-            box-sizing: border-box;
-            border-radius: 20px;
-            background-color: rgb(207, 181,163);
-        }
-        ul li a{
-            display:block;
-            color: rgb(111, 89, 62);
-            background-color: rgb(207, 181,163);
+        div ul li a{
             text-decoration: none;
+            font-size: 1rem;
+            padding: 0.4rem 0.8rem;
+            text-align: center;
+            color: rgb(243,230,213);
+            font-weight: bold;
+            white-space: nowrap;
         }
-        ul li a:hover{
-            background-color: rgb(207, 181,163);
-            color: white;
-            border-color: rgb(187, 115, 27)
+        div ul li a:hover{
+            background-color: rgb(165, 130, 84);
+            color: bisque;
+            border-radius: 25px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1> BANI AGGARWAL</h1>
-        <nav class="nav_panel">
+        <div>
             <ul>
             <li><a href="#Summary">Summary</a></li>
             <li><a href="#Education">Education</a></li>
@@ -61,7 +76,7 @@
             <li><a href="#Achievements and Certifications">Achievements and Certifications</a></li>
             <li><a href="#Contact Me">Contact Me</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
         <section id = "Summary">
